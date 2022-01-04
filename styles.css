@@ -28,6 +28,9 @@
 }
 
 .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   width: 100%;
   margin: 0 auto;
 }
@@ -62,7 +65,7 @@
 
 .main{
   background-color: rgb(46, 143, 199);
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -139,59 +142,205 @@
 }
 
 .description{
-  /* background-color: yellow; */
-  font-family: 'Roboto';
-  font-size: 16px;
-  /* height: 40vh; */
-  line-height: 1.3rem;
-  /* margin-bottom: 24px; */
-  padding: 15px;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.description h2{
+.description{
+  height: 25vh;
+  margin-top: 2em;
+
+}
+
+.description, .about{
+  color: rgb(92, 92, 92);
+  font-size: 16px;
+  font-family: 'Roboto';
+  line-height: 1.3rem;
+  padding: 1em;
+}
+
+.description h1, .about h2{
   font-weight: bold;
   margin-bottom: 20px;
   color: #323233;
 }
 
+.description-btn{
+  background-color: rgb(77, 117, 250);
+  border: none;
+  border-radius: 5px;
+  color: #fafafa;
+  cursor: pointer;
+  font-weight: bold;
+  height: 5vh;
+  margin: 0 auto;
+  width: 60vw;
+}
+
+
+
+
 .contenido-clases{
   font-family: 'Roboto';
-  /* background-color: yellow; */
-  padding: 15px;
-}
-
-.contenido-clases h2{
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  background-color: #87CEEB;
-  border-radius: 8px;
-  /* box-shadow: 5px 5px blue; */
-  color: #fafafa;
-  height: 7vh;
-  margin-bottom: 16px;
-  padding: 5px;
-}
-
-.contenido-clases li{
-  list-style: none;
-  padding-left: 20px;
-  margin-bottom: 5px;
-}
-
-.contenido-clases h3{
-  margin-bottom: 8px;
-  margin-top: 16px;
-  padding-left: 10px;
+  padding: 1em;
+  background-color: rgb(226, 226, 241);
+  color: rgb(87, 84, 84);
   
 }
 
-.clases{
-  /* background-color: red; */
-  padding: 5px 0;
-  cursor: pointer;
+.contenido-clases h2{
+  padding: 0.5em;
+  background-color: rgb(56, 100, 243);
+  border-radius: 5px;
+  color: #fafafa;
 }
 
-.clases.hide{
-  display: none;
+.playIcons{
+  align-items: center;
+  color: #7e7b7b;
+  cursor: pointer;
+  margin: auto 0.5em;
+  font-size: 1rem;
+  padding: 0.4em;
+
 }
+
+.collapsible-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  background-color: #fafafa;
+  margin-top: 0.5em;
+  font-weight: bold;
+  border-radius: 5px;
+  color: #333;
+}
+
+.collapsible-body{
+  padding: 00.5em;
+  box-shadow: ;//falta acaaaaaaa
+}
+
+
+.collapsible-body li{
+  
+  list-style: none;
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  padding: 0.5em ;
+  font-size: 1.1rem;
+  
+}
+
+.collapsible-body.activo{
+  height: 100%;
+  border-radius: 0 0 5px 5px;
+  padding-bottom: 0.3em;
+  background-color: #fafafa;
+  
+}
+
+.collapsible-body {
+  height: 0;
+  list-style: none;
+  padding: 0;
+  margin-left: 0;
+  overflow: hidden;
+  
+}
+
+footer{
+  background-color: rgb(20, 27, 88);
+  color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto";
+  justify-content: space-evenly;
+}
+
+.footer-container{
+  
+  padding: 2em;
+}
+
+.footer-registro{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 1em auto;
+}
+
+.footer-registro p{
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.footer-registro label{
+  margin: 15px auto;
+}
+
+.footer-registro input{
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  outline: none;
+  padding: 0.5em;
+  width: 80%;
+}
+
+.footer-registro button{
+  background-color: rgb(43, 224, 52);
+  border: none;
+  border-radius: 10px;
+  color: #fafafa;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  height: 10vh;
+  letter-spacing: 2px;
+  padding: 0.5em;
+  width: 80%;
+
+}
+
+.redes{
+  font-family: Roboto;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 2em auto;
+  padding: 1em;
+  height: 20vh;
+  text-align: center;
+}
+
+
+
+.redes--logos{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #fafafa;
+  font-size: 2.5rem;s
+}
+
+.redes p{
+  color: #fafafa;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.redes .logoRedes i{
+  width: 1rem;
+  margin: 1em;
+}
+

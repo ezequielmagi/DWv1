@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <script src="https://kit.fontawesome.com/26a5a322a6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,7 +32,7 @@
     <div class="main">
       <img id="logoDelCurso" src="./img/portada.png" alt="logo del curso">
       <div class="title-container">
-        <h1> <span id="pico">></span> Desarrollo Web <span id="underscore" class="parpadea">_</span> </h1>
+        <h1>> Desarrollo Web _</h1>
       
     </div>
     <div class="mobile-menu hide">
@@ -44,54 +48,106 @@
     </div>
   </div>
   <div id="description" class="description">
+     <div class="description-title">
+        <h1>Desarrollo Web </h1>
+        <p>Crea sitios dinámicos de manera profesional!</p>
+     </div>
+      <button class="description-btn">Inscribirme al curso!</button>
+   </div>
+  <div class="about">
     <h2>Descripción del curso:</h2>
     <p>Domina el lenguaje nativo de internet e ingresa en el mundo de la web. Aprende de forma simple los códigos necesarios para diseñar cualquier página web desde cero con HTML y CSS sin conocimientos previos. Aprenderás todo lo que necesitas para empezar en el desarrollo web online y a construir sitios para internet de manera eficiente.</p>
-  
   </div>
-  <div class="contenido-clases" id="contenidoClases">
+  <div class="contenido-clases">
     <h2>Contenido:</h2>
-    <h3>Introducción al Desarrollo Web</h3>
-      <ul class="clases">
-        <li>Path de aprendizaje</li>
-        <li>Cómo funciona la web?</li>
-        <li>Instalaciones necesarias</li>
-      </ul>
-    
-    <h3>Pirmer Módulo: HTML</h3>
-      <ul class="clases">
-        <li>Iniciando un proyecto</li>
-        <li>Primeros pasos con HTML</li>
-        <li>Etiquetas básicas</li>
-        <li>web tools</li>
-        <li>Etiquetas multimedia</li>
-        <li>Web semantica</li>
-        <!-- (img y optimizacion de imagenes, figure, video -->
-        <li>Formularios</li>
-      </ul>
-      <h3>Segundo Módulo: GIT y GIThub</h3>
-        <ul class="clases">
-          <li>Introducción al sistema de control de versiones</li>
-          <li>Creando repositorios locales y remotos</li>
-          <li>Comandos principales</li>
-          <li>Colaborando con otros repositorios</li>
-          <li>GITpages</li>
+
+    <div class="collapsible">
+
+      <div class="collapsible-header">Introducción al Desarrollo Web <i class="material-icons arrows">expand_more</i></div>
+        <div class="collapsible-body activo">
+           <ul class="clases">
+            <li><i class="far fa-play-circle playIcons "></i>Introducción al curso</li>
+            <li><i class="far fa-play-circle playIcons "></i>Cómo funciona la web?</li>
+            <li><i class="fas fa-lock playIcons"></i>Path de aprendizaje web</li>
+            <li><i class="fas fa-lock playIcons"></i>Instalaciones necesarias del curso</li>
+           </ul>
+        </div>
+      
+        <div class="collapsible-header">Pirmer Módulo: HTML<i class="material-icons">expand_more</i></div>
+        <div class="collapsible-body">
+           <ul class="clases">
+              <!-- <li><i class="fas fa-lock playIcons"></i>Iniciando un proyecto</li> -->
+              <li><i class="fas fa-lock playIcons"></i>Introducción a HTML</li>
+              <li><i class="fas fa-lock playIcons"></i>Crear un documento HTML</li>
+              <li><i class="fas fa-lock playIcons"></i>Etiquetas básicas</li>
+              <!-- <li><i class="fas fa-lock playIcons"></i>web tools</li> -->
+              <li><i class="fas fa-lock playIcons"></i>Etiquetas multimedia</li>
+              <!-- (img y optimizacion de imagenes, figure, video -->
+              <li><i class="fas fa-lock playIcons"></i>Formularios</li>
+              <li><i class="fas fa-lock playIcons"></i>Web semantica</li>
         </ul>
-      <h3>Tercer Módulo: CSS</h3>
-        <ul class="clases">
-            <li>Introducción a estilos en cascada</li>
-            <li>Aplicando estilos: etiqueta, selector, class y ID</li>
-            <li>Tipos de display</li>
-            <li>Medidas</li>
-            <li>Fuentes</li>
-            <li>BEM</li>
-            <li>Animaciones</li>
-            <li>Responsive design</li>
-        </ul>
-      <h3>Cuarto Módulo: JavaScript</h3>  
-        <ul class="clases">
-            <li>Introducción a JS</li>
-        </ul>
+        </div>
+
+        <div class="collapsible-header">Segundo Módulo: GIT y GIThub<i class="material-icons">expand_more</i></div>
+        <div class="collapsible-body">
+           <ul class="clases">
+               <li><i class="fas fa-lock playIcons"></i>Introducción al sistema de control de versiones</li>
+               <li><i class="fas fa-lock playIcons"></i>Creando repositorios locales y remotos</li>
+               <li><i class="fas fa-lock playIcons"></i>Comandos principales</li>
+               <li><i class="fas fa-lock playIcons"></i>Colaborando con otros repositorios</li>
+               <li><i class="fas fa-lock playIcons"></i>GITpages</li>
+           </ul>
+        </div>
+
+        <div class="collapsible-header">Tercer Módulo: Estilos con CSS<i class="material-icons">expand_more</i></div>
+        <div class="collapsible-body">
+           <ul class="clases">
+               <li><i class="fas fa-lock playIcons"></i>Introducción al sistema de control de versiones</li>
+               <li><i class="fas fa-lock playIcons"></i>Creando repositorios locales y remotos</li>
+               <li><i class="fas fa-lock playIcons"></i>Comandos principales</li>
+               <li><i class="fas fa-lock playIcons"></i>Colaborando con otros repositorios</li>
+               <li><i class="fas fa-lock playIcons"></i>GITpages</li>
+           </ul>
+        </div>
+      
+        <div class="collapsible-header">Cuarto Módulo: Introducción a JavaScript<i class="material-icons">expand_more</i></div>
+        <div class="collapsible-body">
+           <ul class="clases" >
+              <li><i class="fas fa-lock playIcons"></i>Introducción a JS</li>
+           </ul>
+        </div>
+      
+      <!--  -->
+    </div>     
   </div>
+  <footer>
+    <div class="footer-container">
+      <div class="form-contacto">
+        <form class="footer-registro">
+            <p>Registrate y comienza a aprender hoy mismo!</p>
+            <label for="mail">Ingresa tu correo electrónico:</label>
+            <input type="email">
+            <button>Quiero Comenzar!</button>
+      </form>
+    </div>
+    <div class="redes">
+      <p>Seguinos en las redes:</p>
+      <div class="redes--logos">
+        <i class="fa fa-twitter logoRedes"></i>
+        <i class="fa fa-github logoRedes"></i>
+        <i class="fa fa-linkedin logoRedes"></i>
+        <i class="fa fa-facebook logoRedes"></i>
+      </div>    
+    </div>
+    </div>
+    
+  </footer>
+
+
+
+  
+        
   <script src="main.js"></script>
+
 </body>
 </html>

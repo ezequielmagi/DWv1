@@ -1,25 +1,22 @@
-const main = document.querySelector('.main')
-const mobileMenu = document.querySelector('.mobile-menu')
-const headerButton = document.getElementById('header-button')
-console.log(main)
-console.log(mobileMenu)
+const cHeader = document.querySelectorAll('.collapsible-header') 
+const cbody = document.querySelectorAll('.collapsible-body')
 
-headerButton.addEventListener('click',()=>{
-  main.classList.toggle('hide')
-  mobileMenu.classList.toggle('hide')
-})
 
-const clases = document.querySelectorAll('.clases')
-console.log(clases)
 
-// clases.addEventListener('click', e =>{
-//   e.preventDefault();
-//   console.log(e.target.innerHtml)
-// })
 
-clases.forEach(clase => {
-  clase.addEventListener('click', e => {
-    e.preventDefault()
-    console.log(e.target)
+cHeader.forEach( itemHeader => {
+  itemHeader.addEventListener('click' , ()=>{
+    const currentBody = itemHeader.nextElementSibling
+    
+    if(currentBody.classList.contains("activo")){
+      itemHeader.childNodes[1].textContent = "expand_more"
+    }else{
+      itemHeader.childNodes[1].textContent = "expand_less"
+    }   
+    
+    currentBody.classList.toggle('activo')
+    
+   
   })
-});
+} )
+
