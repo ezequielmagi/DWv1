@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- annimate -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -12,23 +17,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Desarrollo Web v1</title>
 </head>
+
 <body>
-  <div class="container">
+  <header>
     <div class="header">
       <img src="./img/logo.png" alt="">
-      <nav class="nav-menu hide">
-        <ul>
-          <li>Home</li>
-          <li>Cursos</li>
-          <li>Contenido</li>
-          <li>Descripcion</li>
-          <li>Contacto</li>
-        </ul>
-      </nav>
       <button>
         <i class="fas fa-bars" id="header-button"></i>
+        <i class="fas fa-times hide animate__animated animate__rotateIn" id="header-button-close"></i>
       </button>
     </div>
+  </header>
+        <!-- MODAL -->
+
+  <div class="modal hide animate__animated animate__fadeInDown">
+    <div class="modal-container">
+      <ul>
+        <li>Descripcion</li>
+        <li>Contenido</li>
+        <li>Inscribirme</li>
+        <li>Redes Sociales</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- END OF MODAL -->
+  <main class="animate__animated animate__fadeIn">
+<div class="container">
+    
     <div class="main">
       <img id="logoDelCurso" src="./img/portada.png" alt="logo del curso">
       <div class="title-container">
@@ -68,7 +84,10 @@
            <ul class="clases">
             <li><i class="far fa-play-circle playIcons "></i>Introducción al curso</li>
             <li><i class="far fa-play-circle playIcons "></i>Cómo funciona la web?</li>
-            <li><i class="fas fa-lock playIcons"></i>Path de aprendizaje web</li>
+            <!-- <li><i class="fas fa-lock playIcons"></i>Path de aprendizaje web</li> -->
+            <li><i class="fas fa-lock playIcons"></i>¿Qué es el FRONTEND?</li>
+            <li><i class="fas fa-lock playIcons"></i>¿Qué es el BACKEND?</li>
+            <li><i class="fas fa-lock playIcons"></i>¿Páginas estáticas o dinámicas?</li>
             <li><i class="fas fa-lock playIcons"></i>Instalaciones necesarias del curso</li>
            </ul>
         </div>
@@ -120,7 +139,10 @@
       <!--  -->
     </div>     
   </div>
-  <footer>
+  </main>
+
+  
+  <footer class="">
     <div class="footer-container">
       <div class="form-contacto">
         <form class="footer-registro">
@@ -142,6 +164,7 @@
     </div>
     
   </footer>
+
 
 
 

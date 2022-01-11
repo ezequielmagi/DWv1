@@ -10,6 +10,10 @@
   --primary-color-itc:#0058ff
 }
 
+.hide{
+  display: none;
+}
+
 .nav-menu.hide{
   display: none;
 }
@@ -57,7 +61,7 @@
   /* margin-bottom: 20px; */
 }
 
-#header-button{
+#header-button, #header-button-close{
   color: var(--primary-color-itc);
   cursor: pointer;
   font-size: 2rem;
@@ -344,3 +348,31 @@ footer{
   margin: 1em;
 }
 
+.modal.hide{
+  display: none;
+}
+
+.modal{
+  display: grid;
+  align-items: center;
+  height: 80vh;
+  width: 100%;
+}
+
+.modal ul{
+  list-style: none;
+  height: 100%;
+}
+
+.modal li{
+   display: flex;
+  justify-content: space-evenly;
+  padding: 1em;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Roboto';
+  margin: 0.5em;
+  background-color: teal;
+  border-radius: 20px;
+  color: #fafafa;
+}
